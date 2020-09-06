@@ -21,6 +21,13 @@ module.exports = {
                 { from: './src/pages'},
             ],
         }),
-        new HtmlWebpackPlugin(),
+        new HtmlWebpackPlugin({
+            filename: "index.html",
+            template: "./src/pages/index.html",
+        }),
+        new HtmlWebpackPlugin({
+            filename: "pszczelarstwo.html",
+            template: "./src/pages/pszczelarstwo.html",
+        }),
     ]
 };
