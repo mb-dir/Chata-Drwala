@@ -14,6 +14,40 @@ module.exports = {
         filename: "[name].[contenthash:8].js",
         path: __dirname + "/dist",
     },
+    module: {
+        rules: [
+            {
+                test: /\.s[ac]ss$/i,
+                loader: [
+                    "style-loader",
+                    {
+                        loader: "css-loader",
+                        options: {
+                            sourceMap: true,
+                        },
+                    },
+                    {
+                        loader: "sass-loader",
+                        options: {
+                            sourceMap: true,
+                        },
+                    },
+                ],
+            },
+            {
+                test: /\.css$/i,
+                loader: [
+                    "style-loader",
+                    {
+                        loader: "css-loader",
+                        options: {
+                            sourceMap: true,
+                        },
+                    },
+                ],
+            },
+        ],
+    },
     plugins: [
         new CleanWebpackPlugin(),
         new CopyPlugin({
