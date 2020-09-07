@@ -1,1 +1,1 @@
-alert("działam")
+console.log("I work!")
