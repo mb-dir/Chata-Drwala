@@ -52,7 +52,8 @@ module.exports = {
         new CleanWebpackPlugin(),
         new CopyPlugin({
             patterns: [
-                { from: './src/pages'},
+                { from: './src/pages' },
+                { from: './src/assets', to: './assets' },
             ],
         }),
         new HtmlWebpackPlugin({
