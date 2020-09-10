@@ -64,5 +64,8 @@ module.exports = {
             filename: "pszczelarstwo.html",
             template: "./src/pages/pszczelarstwo.html",
         }),
-    ]
+    ],
+    devServer: {
+        port: 9000,
+    }
 };
