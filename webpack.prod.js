@@ -5,7 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
     devtool: "source-map",
-    mode: "development",
+    mode: "production",
 
     entry: {
         index: "./src/scripts/index.js",
@@ -65,7 +65,4 @@ module.exports = {
             template: "./src/pages/pszczelarstwo.html",
         }),
     ],
-    devServer: {
-        port: 9000,
-    }
 };
