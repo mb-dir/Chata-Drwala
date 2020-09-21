@@ -53,16 +53,16 @@ module.exports = {
         new CopyPlugin({
             patterns: [
                 { from: './src/pages' },
-                { from: './src/assets', to: './assets' },
+                // { from: './src/assets', to: './assets' },
             ],
         }),
         new HtmlWebpackPlugin({
             filename: "index.html",
             template: "./src/pages/index.html",
         }),
-        new HtmlWebpackPlugin({
-            filename: "pszczelarstwo.html",
-            template: "./src/pages/pszczelarstwo.html",
-        }),
+        // new HtmlWebpackPlugin({
+        //     filename: "pszczelarstwo.html",
+        //     template: "./src/pages/pszczelarstwo.html",
+        // }),
     ],
 };
