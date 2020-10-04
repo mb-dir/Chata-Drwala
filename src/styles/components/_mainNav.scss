@@ -76,6 +76,8 @@
         transform: translateY(0);
         display: flex;
         justify-content: flex-end;
+        //reset the borders(I do not want borders on bigger screens)
+        border: none;
         &__item{
             width: 125px;
             padding: 0;
