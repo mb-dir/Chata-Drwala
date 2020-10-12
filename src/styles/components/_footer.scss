@@ -1,0 +1,10 @@
+.footer{
+    margin-top: 30px;
+    &__flexWrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border-top: 2px solid $dark;
+        border-bottom: 2px solid $dark;
+    }
+}
