@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    &__item{
+        margin-top: 5px;
+    }
     &--disc{
         list-style: disc inside;
     }
