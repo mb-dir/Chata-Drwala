@@ -8,3 +8,11 @@
         border-bottom: 2px solid $dark;
     }
 }
+@media(min-width: 768px){
+    .footer{
+        &__flexWrapper{
+            flex-wrap: nowrap;
+            align-items: center;
+        }
+    }     
+}
