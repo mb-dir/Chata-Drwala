@@ -6,28 +6,35 @@
     <title>Document</title>
 </head>
 <body>
-    <nav class="mainMenu">
-        <ul class="list mainMenu__menu">
-            <li class="mainMenu__item">
-                <a href="" title="O nas" class="mainMenu__link">O nas</a>
-            </li>
-            <li class="mainMenu__item">
-                <a href="" title="Nasz domek" class="mainMenu__link">Nasz domek</a>
-            </li>
-            <li class="mainMenu__item">
-                <a href="" title="Okolica i atrakcje" class="mainMenu__link">Okolica i atrakcje</a>
-            </li>
-            <li class="mainMenu__item">
-                <a href="" title="Galeria" class="mainMenu__link">Galeria</a>
-            </li>
-            <li class="mainMenu__item">
-                <a href="" title="Pszczelarstwo" class="mainMenu__link">Pszczelarstwo</a>
-            </li>
-            <li class="mainMenu__item">
-                <a href="" title="Kontakt" class="mainMenu__link">Kontakt</a>
-            </li>
-        </ul>
-    </nav>
+    <div class="mainMenuWrapper">
+        <nav class="mainMenu">
+            <ul class="list mainMenu__menu">
+                <li class="mainMenu__item">
+                    <a href="" title="O nas" class="mainMenu__link">O nas</a>
+                </li>
+                <li class="mainMenu__item">
+                    <a href="" title="Nasz domek" class="mainMenu__link">Nasz domek</a>
+                </li>
+                <li class="mainMenu__item">
+                    <a href="" title="Okolica i atrakcje" class="mainMenu__link">Okolica i atrakcje</a>
+                </li>
+                <li class="mainMenu__item">
+                    <a href="" title="Galeria" class="mainMenu__link">Galeria</a>
+                </li>
+                <li class="mainMenu__item">
+                    <a href="" title="Pszczelarstwo" class="mainMenu__link">Pszczelarstwo</a>
+                </li>
+                <li class="mainMenu__item">
+                    <a href="" title="Kontakt" class="mainMenu__link">Kontakt</a>
+                </li>
+            </ul>
+        </nav>
+        <button class="btn mainMenuWrapper__btnCollapse">
+            <div class="mainMenuWrapper__btnBar"></div>
+            <div class="mainMenuWrapper__btnBar"></div>
+            <div class="mainMenuWrapper__btnBar"></div>
+        </button>
+    </div>
 
     <div class="sliderWrapper"></div>
 
@@ -60,11 +67,11 @@
             oferujemy:</p>
             
             <!-- list is a separate component so I do not add class like article__list -->
-            <ul class="list">
+            <ul class="list list--disc">
                 <li class="list__item">6 miejsc noclegowych(dwuosobowa, rozkładana sofa + 4 jednoosobowe łóżka możliwe do połączenia)</li>
 
                 <li class="list__item">Łazienka
-                    <ul class="list list--inner">
+                    <ul class="list list--disc list--inner">
                         <li class="list__item list__item--inner">Prysznic</li>
                         <li class="list__item list__item--inner">WC</li>
                         <li class="list__item list__item--inner">Bidet</li>
@@ -74,7 +81,7 @@
                 </li>
 
                 <li class="list__item">Aneks kuchenny
-                    <ul class="list list--inner">
+                    <ul class="list list--disc list--inner">
                         <li class="list__item list__item--inner">Kuchenka gazowa</li>
                         <li class="list__item list__item--inner">Lodówka</li>
                         <li class="list__item list__item--inner">Zlewozmywak</li>
@@ -94,7 +101,7 @@
     </main>
 
     <footer class="footer">
-        <div class="flexWrapper">
+        <div class="footer__flexWrapper">
             <address class="address">
                 <p class="content">Adres: Brzeziny 393, 39-111 Brzeziny</p>
                 <p class="content">Informacja i rezerwacja: Gosia tel. 600 538 513</p>
@@ -104,7 +111,7 @@
             <!-- map with localization from google -->
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10278.713817144553!2d21.5313135!3d49.9048398!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xafd41f23b31771c6!2sChata%20Drwala!5e0!3m2!1spl!2spl!4v1601145276842!5m2!1spl!2spl"
-                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                width="600" height="450" frameborder="1" style="border:1px solid black;" allowfullscreen="" aria-hidden="false"
                 tabindex="0"></iframe>
         </div>
         <p class="content">© Chata Drwala 2020 Wszystkie prawa zastrzeżone</p>

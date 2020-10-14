@@ -1,0 +1,19 @@
+.footer{
+    margin-top: 30px;
+    &__flexWrapper{
+        background-color: $gray;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border-top: 2px solid $dark;
+        border-bottom: 2px solid $dark;
+    }
+}
+@media(min-width: 768px){
+    .footer{
+        &__flexWrapper{
+            flex-wrap: nowrap;
+            align-items: center;
+        }
+    }     
+}

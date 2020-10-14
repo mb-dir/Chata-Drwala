@@ -1,0 +1,86 @@
+.mainMenuWrapper{
+    background-color: #fff;
+    box-shadow: 0 0 8px 0 $dark;
+    position: sticky;
+    top: 0;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__btnCollapse{
+        background-color: #fff;
+        position: absolute;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-flow: column wrap;
+        border: none;
+        border: 2px solid $dark;
+        border-radius: 5px;
+        width: 60px;
+        height: 44px;
+        padding: 5px;
+        &:hover{
+            cursor: pointer;
+            background-color: $gray;
+        }
+        &:focus{
+            outline: $yellow solid 1px;
+        }
+    }
+    &__btnBar{
+        height: 4px;
+        width: 60%;
+        background-color:$dark;
+    }
+}
+.mainMenu{
+    transform: translateY(-100%);
+    transition:  transform 1s;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 2px solid $dark;
+    border-top: 1px solid $dark;
+    padding: 10px;
+    z-index: 2;
+    &__menu{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__item{
+        width: 100%;
+        height: 30px;
+        padding: 5px;
+    }
+    &__link{
+        color: $dark;
+        &:hover{
+            color: $yellow;
+        }
+    }
+    &--open{
+        transform: translateY(70%);
+        transition: transform 1s;
+    }
+}
+
+//MEDIA QUERIES
+@media(min-width: 768px){
+    .mainMenuWrapper{
+        &__btnCollapse{
+            display: none;
+        }
+    }
+    .mainMenu{
+        transform: translateY(0);
+        display: flex;
+        justify-content: flex-end;
+        //reset the borders(I do not want borders on bigger screens)
+        border: none;
+        &__item{
+            width: 125px;
+            padding: 0;
+            padding-top: 5px;
+        }
+    }
+}
