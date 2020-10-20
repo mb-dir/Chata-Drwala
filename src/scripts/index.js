@@ -8,3 +8,9 @@ const classNameToggle = 'mainMenu--open';
 
 //COMPONENTS IMPORTS
 import MobileMenuHandler from './components/mobileMenuHandler.js';
+
+//COMPONENTS USE
+
+//mobile menu
+const menuHander = new MobileMenuHandler(buttonCollapse, elementToToggle, classNameToggle);
+menuHander.menuCollapseHandler();
