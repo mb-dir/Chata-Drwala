@@ -2,7 +2,7 @@ class MobileMenuHandler{
     constructor(buttonCollapse, elementToToggle, classNameToggle){
         this.buttonCollapse = buttonCollapse;
         this.elementToToggle = elementToToggle;
-        this.classNameToggle =classNameToggle;
+        this.classNameToggle = classNameToggle;
     }
     menuCollapseHandler(){
         this.buttonCollapse.addEventListener('click', ()=>{
