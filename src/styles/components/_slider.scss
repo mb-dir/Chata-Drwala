@@ -1,4 +1,22 @@
 .sliderWrapper{
     border: 1px solid red;
     height: 60vh;
+    &__dotsWrapper{
+        height: 40px;
+    width: 160px;
+    border: 1px solid blue;
+    position: absolute;
+    left: 50%;
+    top: 85%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    }
+    &__dot{
+        background: #f00;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+    }
 }
