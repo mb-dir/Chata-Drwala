@@ -14,9 +14,10 @@
     align-items: center;
     }
     &__dot{
-        background: #f00;
+        background: #fff;
         width: 20px;
         height: 20px;
         border-radius: 50%;
+        border: 3px solid $dark;
     }
 }
