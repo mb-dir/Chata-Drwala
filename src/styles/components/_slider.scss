@@ -31,4 +31,11 @@
         }
     }
     // STYLE FOR DOTS END
+
+    &__img{
+        display: none;
+        &--active{
+            display: block;
+        }
+    }
 }
