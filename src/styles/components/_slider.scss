@@ -4,14 +4,14 @@
     position: relative;
     &__dotsWrapper{
         height: 40px;
-    width: 160px;
-    position: absolute;
-    left: 50%;
-    top: 85%;
-    transform: translate(-50%);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+        width: 160px;
+        position: absolute;
+        left: 50%;
+        top: 85%;
+        transform: translate(-50%);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
     }
     &__dot{
         background: #fff;
