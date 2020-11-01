@@ -19,3 +19,7 @@ import DotsCreator from './components/slider/CreateDots.js';
 //mobile menu
 const menuHander = new MobileMenuHandler(buttonCollapse, elementToToggle, classNameToggle);
 menuHander.menuCollapseHandler();
+
+//dots creator
+const dotsCreator = new DotsCreator(dotsWrapper, sliderPhotos);
+dotsCreator.drawDots();
