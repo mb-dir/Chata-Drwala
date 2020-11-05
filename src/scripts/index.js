@@ -13,6 +13,7 @@ const sliderPhotos = document.querySelectorAll('.sliderWrapper__img');
 //COMPONENTS IMPORTS
 import MobileMenuHandler from './components/mobileMenuHandler.js';
 import DotsCreator from './components/slider/CreateDots.js';
+import ChangePhoto from './components/slider/ChangePhoto';
 
 //COMPONENTS USE
 
