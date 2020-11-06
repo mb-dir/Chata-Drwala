@@ -8,6 +8,7 @@ class ChangePhoto {
         this.index = 0;
 
         this.defaultPhotoChange();
+        this.dotClickPhotoChange();
     }
 
     defaultPhotoChange(){
@@ -28,6 +29,28 @@ class ChangePhoto {
             }
             this.dots[this.index].classList.add('sliderWrapper__dot--active');
         }, 5000);
+    }
+    dotClickPhotoChange(){
+        //convert to array to forEach works
+        [...this.dots].forEach((dot, i)=>{
+            dot.addEventListener('click', () => {
+
+                this.index = i;
+
+                //photo change
+                for (const photo of this.photos) {
+                    photo.classList.remove('sliderWrapper__img--active');
+                }
+                this.photos[this.index].classList.add('sliderWrapper__img--active');
+
+                //dots change
+                for (const dot of this.dots) {
+                    dot.classList.remove('sliderWrapper__dot--active');
+                }
+                this.dots[this.index].classList.add('sliderWrapper__dot--active');
+
+            });
+        });
     }
 }
 export default ChangePhoto;
