@@ -21,6 +21,12 @@ class ChangePhoto {
                 photo.classList.remove('sliderWrapper__img--active');
             }
             this.photos[this.index].classList.add('sliderWrapper__img--active');
+            
+            //dots change
+            for (const dot of this.dots) {
+                dot.classList.remove('sliderWrapper__dot--active');
+            }
+            this.dots[this.index].classList.add('sliderWrapper__dot--active');
         }, 5000);
     }
 }
