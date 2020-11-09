@@ -1,4 +1,44 @@
 .sliderWrapper{
-    border: 1px solid red;
     height: 60vh;
+    position: relative;
+    // STYLE FOR DOTS
+    &__dotsWrapper{
+        list-style: none;
+        margin: 0px;
+        padding: 0;
+        height: 40px;
+        position: absolute;
+        left: 50%;
+        top: 85%;
+        transform: translate(-50%);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    &__dot{
+        background: #fff;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        margin: 0 5px;
+        border: 3px solid $dark;
+        &--active{
+            background: $yellow;
+        }
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    // STYLE FOR DOTS END
+
+    &__img{
+        position: absolute;
+        left: 0;
+        opacity: 0;
+        transition: opacity 2s;
+        &--active{
+            opacity: 1;
+            transition: opacity 2s;
+        }
+    }
 }
