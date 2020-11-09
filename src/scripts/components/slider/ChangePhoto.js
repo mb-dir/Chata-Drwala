@@ -7,12 +7,14 @@ class ChangePhoto {
         this.photos = photos;
         this.index = 0;
 
+        this.time;
+
         this.defaultPhotoChange();
         this.dotClickPhotoChange();
     }
 
     defaultPhotoChange(){
-        setInterval(() => {
+        this.time = setInterval(() => {
             this.index++;
             if (this.index === this.photos.length) {
                 this.index = 0;
@@ -27,6 +29,9 @@ class ChangePhoto {
             dot.addEventListener('click', () => {
                 this.index = i;
                 this.photoChange();
+
+                clearInterval(this.time);
+                this.defaultPhotoChange();
             });
         });
     }
