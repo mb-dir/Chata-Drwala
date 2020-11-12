@@ -64,6 +64,10 @@ module.exports = {
             filename: "okolica-atrakcje.html",
             template: "./src/pages/okolica-atrakcje.html",
         }),
+        new HtmlWebpackPlugin({
+            filename: "pszczelarstwo.html",
+            template: "./src/pages/pszczelarstwo.html",
+        }),
     ],
     devServer: {
         port: 9000,
