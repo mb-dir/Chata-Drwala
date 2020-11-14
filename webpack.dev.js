@@ -68,6 +68,10 @@ module.exports = {
             filename: "pszczelarstwo.html",
             template: "./src/pages/pszczelarstwo.html",
         }),
+        new HtmlWebpackPlugin({
+            filename: "galeria.html",
+            template: "./src/pages/galeria.html",
+        }),
     ],
     devServer: {
         port: 9000,
