@@ -8,6 +8,11 @@
         border-top: 2px solid $dark;
         border-bottom: 2px solid $dark;
     }
+    &__map{
+        width: 600px;
+        height: 250px;
+        border:1px solid black;
+    }
 }
 @media(min-width: 768px){
     .footer{
