@@ -1,4 +1,5 @@
 import '../styles/main.scss';
+import 'fslightbox';
 import './components/mobileMenuHandler.js';
 
 //variables related with "mobileMenuHandler"

@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "fslightbox": "^3.2.2",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
   },
