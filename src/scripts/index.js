@@ -1,4 +1,5 @@
 import '../styles/main.scss';
+//https://fslightbox.com/javascript/documentation/installation#package-manager
 import 'fslightbox';
 
 //variables related with "mobileMenuHandler"
