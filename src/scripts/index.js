@@ -1,6 +1,6 @@
 import '../styles/main.scss';
+//https://fslightbox.com/javascript/documentation/installation#package-manager
 import 'fslightbox';
-import './components/mobileMenuHandler.js';
 
 //variables related with "mobileMenuHandler"
 const buttonCollapse = document.querySelector('#btnCollapse');
