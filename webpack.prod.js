@@ -59,18 +59,22 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: "index.html",
             template: "./src/pages/index.html",
+            minify: false,
         }),
         new HtmlWebpackPlugin({
             filename: "okolica-atrakcje.html",
             template: "./src/pages/okolica-atrakcje.html",
+            minify: false,
         }),
         new HtmlWebpackPlugin({
             filename: "pszczelarstwo.html",
             template: "./src/pages/pszczelarstwo.html",
+            minify: false,
         }),
         new HtmlWebpackPlugin({
             filename: "galeria.html",
             template: "./src/pages/galeria.html",
+            minify: false,
         }),
     ],
 };
