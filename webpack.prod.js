@@ -4,7 +4,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 
 module.exports = {
-    devtool: "source-map",
     mode: "production",
 
     entry: {
@@ -22,15 +21,9 @@ module.exports = {
                     "style-loader",
                     {
                         loader: "css-loader",
-                        options: {
-                            sourceMap: true,
-                        },
                     },
                     {
                         loader: "sass-loader",
-                        options: {
-                            sourceMap: true,
-                        },
                     },
                 ],
             },
@@ -40,9 +33,6 @@ module.exports = {
                     "style-loader",
                     {
                         loader: "css-loader",
-                        options: {
-                            sourceMap: true,
-                        },
                     },
                 ],
             },
