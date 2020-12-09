@@ -1,6 +1,8 @@
 import '../styles/main.scss';
 //https://fslightbox.com/javascript/documentation/installation#package-manager
 import 'fslightbox';
+//https://www.npmjs.com/package/lazysizes
+import 'lazysizes';
 
 //variables related with "mobileMenuHandler"
 const buttonCollapse = document.querySelector('#btnCollapse');
