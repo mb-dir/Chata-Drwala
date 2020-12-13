@@ -3,4 +3,9 @@
     &__contentHeader{
         font-family: 'Sansita Swashed', cursive;;
     }
+    &__content{
+        &--special_font{
+            font-family: 'Sansita Swashed', cursive;
+        }
+    }
 }
