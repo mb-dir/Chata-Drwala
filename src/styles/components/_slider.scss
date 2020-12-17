@@ -44,8 +44,8 @@
     &__textWrapper{
         position: absolute;
         width: 100%;
-        //65% of height to this wrapper does not cover the dots(if this wrapper covers the dots user is not able to click in dots)
-        height: 65%;
+        //75% of height to this wrapper does not cover the dots(if this wrapper covers the dots user is not able to click in dots)
+        height: 75%;
         left: 0;
         top: 0;
         display: flex;
