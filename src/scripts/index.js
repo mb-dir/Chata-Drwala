@@ -13,6 +13,9 @@ const classNameToggle = 'mainMenu--open';
 const dotsWrapper = document.querySelector('#dotsWrapper');
 const sliderPhotos = document.querySelectorAll('.sliderWrapper__img');
 
+//variables related with ChangePhoto - promitionalTextShowing method
+const promotionalTxt = document.querySelector('#promotionalTxt');
+
 //COMPONENTS IMPORTS
 import MobileMenuHandler from './components/mobileMenuHandler.js';
 import DotsCreator from './components/slider/CreateDots.js';
