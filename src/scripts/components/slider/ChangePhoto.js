@@ -22,6 +22,7 @@ class ChangePhoto {
             }
             
             this.photoChange();
+            this.promitionalTextShowing();
         }, 5000);
     }
     dotClickPhotoChange(){
@@ -33,8 +34,16 @@ class ChangePhoto {
 
                 clearInterval(this.time);
                 this.defaultPhotoChange();
+                this.promitionalTextShowing();
             });
         });
+    }
+    promitionalTextShowing(){
+        if(this.index !== 0){
+            promotionalTxt.style.display = 'none';
+        }else{
+            promotionalTxt.style.display = 'flex';
+        }
     }
 
     //auxiliary methods
