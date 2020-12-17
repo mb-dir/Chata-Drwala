@@ -32,4 +32,4 @@ const dotsCreator = new DotsCreator(dotsWrapper, sliderPhotos);
 dotsCreator.drawDots();
 
 //photo change
-const changePhoto = new ChangePhoto(dotsWrapper, sliderPhotos);
+const changePhoto = new ChangePhoto(dotsWrapper, sliderPhotos, promotionalTxt);
