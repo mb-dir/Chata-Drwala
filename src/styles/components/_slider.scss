@@ -41,16 +41,38 @@
             transition: opacity 2s;
         }
     }
+    &__textWrapper{
+        position: absolute;
+        width: 100%;
+        //75% of height to this wrapper does not cover the dots(if this wrapper covers the dots user is not able to click in dots)
+        height: 75%;
+        left: 0;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    &__promotionalText{
+        font-size: 36px;
+        color: #fff;
+        text-shadow: 5px 5px 0px #000000;
+    }
 }
 
 //MEDIA QUERIES
 @media(min-width: 576px){
     .sliderWrapper{
         height: 60vh;
+        &__promotionalText{
+            font-size: 64px;
+        }
     }
 }
 @media(min-width: 768px){
     .sliderWrapper{
         height: 90vh;
+        &__promotionalText{
+            font-size: 96px;
+        }
     }
 }

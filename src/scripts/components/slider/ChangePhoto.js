@@ -1,10 +1,11 @@
 class ChangePhoto {
-    constructor(dotsWrapper, photos) {
+    constructor(dotsWrapper, photos, promotionalTxt) {
         // dots wrapper because the dots are dynamically created and I cannot pass here the collection of dots
         // I mean when I want to save dots in variable like document.querySelectorAll(dots) I get an error, becuase there are no dots in DOM
         this.dotsWrapper = dotsWrapper;
         this.dots = this.dotsWrapper.children;
         this.photos = photos;
+        this.promotionalTxt = promotionalTxt
         this.index = 0;
 
         this.time;
@@ -21,6 +22,7 @@ class ChangePhoto {
             }
             
             this.photoChange();
+            this.promitionalTextShowing();
         }, 5000);
     }
     dotClickPhotoChange(){
@@ -32,8 +34,16 @@ class ChangePhoto {
 
                 clearInterval(this.time);
                 this.defaultPhotoChange();
+                this.promitionalTextShowing();
             });
         });
+    }
+    promitionalTextShowing(){
+        if(this.index !== 0){
+            promotionalTxt.style.display = 'none';
+        }else{
+            promotionalTxt.style.display = 'flex';
+        }
     }
 
     //auxiliary methods
