@@ -1,6 +1,7 @@
 .sliderWrapper{
     height: 40vh;
     position: relative;
+    background-color: $dark;
     // STYLE FOR DOTS
     &__dotsWrapper{
         list-style: none;
