@@ -1,6 +1,7 @@
 .sliderWrapper{
     height: 40vh;
     position: relative;
+    background-color: $dark;
     // STYLE FOR DOTS
     &__dotsWrapper{
         list-style: none;
@@ -35,7 +36,7 @@
         position: absolute;
         left: 0;
         opacity: 0;
-        transition: opacity 2s;
+        transition: opacity .4s;
         &--active{
             opacity: 1;
             transition: opacity 2s;

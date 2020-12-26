@@ -23,7 +23,7 @@ class ChangePhoto {
             
             this.photoChange();
             this.promitionalTextShowing();
-        }, 5000);
+        }, 7000);
     }
     dotClickPhotoChange(){
         //convert to array to forEach works
