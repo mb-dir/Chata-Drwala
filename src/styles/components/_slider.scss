@@ -63,6 +63,9 @@
 //MEDIA QUERIES
 @media(min-width: 576px){
     .sliderWrapper{
+        &__dotsWrapper{
+            top: 85%;
+        }
         height: 60vh;
         &__promotionalText{
             font-size: 64px;
