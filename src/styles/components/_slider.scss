@@ -10,7 +10,7 @@
         height: 40px;
         position: absolute;
         left: 50%;
-        top: 85%;
+        top: 75%;
         transform: translate(-50%);
         display: flex;
         justify-content: space-around;
@@ -18,10 +18,10 @@
     }
     &__dot{
         background: #fff;
-        width: 20px;
-        height: 20px;
+        width: 25px;
+        height: 25px;
         border-radius: 50%;
-        margin: 0 5px;
+        margin: 0 8px;
         border: 3px solid $dark;
         &--active{
             background: $yellow;
@@ -63,6 +63,9 @@
 //MEDIA QUERIES
 @media(min-width: 576px){
     .sliderWrapper{
+        &__dotsWrapper{
+            top: 85%;
+        }
         height: 60vh;
         &__promotionalText{
             font-size: 64px;
