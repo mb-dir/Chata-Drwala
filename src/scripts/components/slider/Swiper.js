@@ -13,7 +13,12 @@ class Swiper{
             });
 
             img.addEventListener("touchmove",(e)=>{
-
+                let currentX = e.touches[0].clientX;
+                if(this.swipeX-currentX > 0){
+                    console.log("Swipe right");
+                }else{
+                    console.log("Swipe left");
+                }
             });
         }
     }
