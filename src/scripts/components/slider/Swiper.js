@@ -2,6 +2,9 @@ class Swiper{
     constructor(sliderImgs){
         this.sliderImgs = sliderImgs;
 
+        this.swipeX = null;
+        this.swipeY = null;
+
         this.detectSwipeDirection();
     }
     detectSwipeDirection(){
