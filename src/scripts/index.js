@@ -36,4 +36,4 @@ dotsCreator.drawDots();
 const changePhoto = new ChangePhoto(dotsWrapper, sliderPhotos, promotionalTxt);
 
 //swiper test
-const test = new Swiper()
+const test = new Swiper(sliderPhotos);
