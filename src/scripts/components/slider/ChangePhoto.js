@@ -13,6 +13,7 @@ class ChangePhoto {
 
         this.defaultPhotoChange();
         this.dotClickPhotoChange();
+        this.swiper();
     }
 
     defaultPhotoChange(){
@@ -38,6 +39,22 @@ class ChangePhoto {
                 this.promitionalTextShowing();
             });
         });
+    }
+    swiper(){
+        for(const img of this.photos){
+            img.addEventListener("touchstart",(e)=>{
+                this.swipeX = e.touches[0].clientX;
+            });
+
+            img.addEventListener("touchmove",(e)=>{
+                let currentX = e.touches[0].clientX;
+                if(this.swipeX-currentX > 0){
+                    console.log("Swipe right");
+                }else{
+                    console.log("Swipe left");
+                }
+            });
+        }
     }
     promitionalTextShowing(){
         if(this.index !== 0){
