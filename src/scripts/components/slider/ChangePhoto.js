@@ -60,6 +60,8 @@ class ChangePhoto {
 
                 }else if(this.swipeX-currentX < -20){
                     this.index--;
+                    
+                    //less then 0 because in 0 index there is still a photo, so the photo has to change to the last only when the index is less then 0
                     if (this.index < 0) {
                         this.index = this.photos.length-1;
                     }
