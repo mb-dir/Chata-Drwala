@@ -46,12 +46,27 @@ class ChangePhoto {
                 this.swipeX = e.touches[0].clientX;
             });
 
-            img.addEventListener("touchmove",(e)=>{
-                let currentX = e.touches[0].clientX;
+            img.addEventListener("touchend",(e)=>{
+                let currentX = e.changedTouches[0].clientX;
                 if(this.swipeX-currentX > 20){
-                    console.log("Swipe right");
+                    this.index++;
+                    if (this.index === this.photos.length) {
+                        this.index = 0;
+                    }
+
+                    clearInterval(this.time);
+                    this.photoChange();
+                    this.promitionalTextShowing();
+
                 }else if(this.swipeX-currentX < -20){
-                    console.log("Swipe left");
+                    this.index--;
+                    if (this.index < 0) {
+                        this.index = this.photos.length-1;
+                    }
+
+                    clearInterval(this.time);
+                    this.photoChange();
+                    this.promitionalTextShowing();
                 }
             });
         }
