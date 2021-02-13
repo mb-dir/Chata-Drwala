@@ -6,6 +6,7 @@ class ChangePhoto {
         this.dots = this.dotsWrapper.children;
         this.photos = photos;
         this.promotionalTxt = promotionalTxt
+        this.swipeX = null;
         this.index = 0;
 
         this.time;
