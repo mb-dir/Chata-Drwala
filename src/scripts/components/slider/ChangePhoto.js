@@ -48,9 +48,9 @@ class ChangePhoto {
 
             img.addEventListener("touchmove",(e)=>{
                 let currentX = e.touches[0].clientX;
-                if(this.swipeX-currentX > 0){
+                if(this.swipeX-currentX > 20){
                     console.log("Swipe right");
-                }else{
+                }else if(this.swipeX-currentX < -20){
                     console.log("Swipe left");
                 }
             });
