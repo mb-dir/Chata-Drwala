@@ -48,6 +48,7 @@ class ChangePhoto {
 
             img.addEventListener("touchend",(e)=>{
                 let currentX = e.changedTouches[0].clientX;
+                //20 provide that user will not swipe the photo by acident
                 if(this.swipeX-currentX > 20){
                     this.index++;
                     if (this.index === this.photos.length) {

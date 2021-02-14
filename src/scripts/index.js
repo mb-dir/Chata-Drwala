@@ -9,7 +9,7 @@ const buttonCollapse = document.querySelector('#btnCollapse');
 const elementToToggle = document.querySelector('#menu');
 const classNameToggle = 'mainMenu--open';
 
-//variables related with "CreateDots" "and ChangePhoto"
+//variables related with "CreateDots" ,"ChangePhoto(also with swiper method)"
 const dotsWrapper = document.querySelector('#dotsWrapper');
 const sliderPhotos = document.querySelectorAll('.sliderWrapper__img');
 
