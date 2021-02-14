@@ -20,7 +20,6 @@ const promotionalTxt = document.querySelector('#promotionalTxt');
 import MobileMenuHandler from './components/mobileMenuHandler.js';
 import DotsCreator from './components/slider/CreateDots.js';
 import ChangePhoto from './components/slider/ChangePhoto';
-import Swiper from './components/slider/Swiper';
 
 //COMPONENTS USE
 
@@ -34,6 +33,3 @@ dotsCreator.drawDots();
 
 //photo change
 const changePhoto = new ChangePhoto(dotsWrapper, sliderPhotos, promotionalTxt);
-
-//swiper test
-const test = new Swiper(sliderPhotos);
