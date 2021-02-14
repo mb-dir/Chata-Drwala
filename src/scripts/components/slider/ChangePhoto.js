@@ -6,12 +6,14 @@ class ChangePhoto {
         this.dots = this.dotsWrapper.children;
         this.photos = photos;
         this.promotionalTxt = promotionalTxt
+        this.swipeX = null;
         this.index = 0;
 
         this.time;
 
         this.defaultPhotoChange();
         this.dotClickPhotoChange();
+        this.swiper();
     }
 
     defaultPhotoChange(){
@@ -37,6 +39,40 @@ class ChangePhoto {
                 this.promitionalTextShowing();
             });
         });
+    }
+    swiper(){
+        for(const img of this.photos){
+            img.addEventListener("touchstart",(e)=>{
+                this.swipeX = e.touches[0].clientX;
+            });
+
+            img.addEventListener("touchend",(e)=>{
+                let currentX = e.changedTouches[0].clientX;
+                //20 provide that user will not swipe the photo by acident
+                if(this.swipeX-currentX > 20){
+                    this.index++;
+                    if (this.index === this.photos.length) {
+                        this.index = 0;
+                    }
+
+                    clearInterval(this.time);
+                    this.photoChange();
+                    this.promitionalTextShowing();
+
+                }else if(this.swipeX-currentX < -20){
+                    this.index--;
+                    
+                    //less then 0 because in 0 index there is still a photo, so the photo has to change to the last only when the index is less then 0
+                    if (this.index < 0) {
+                        this.index = this.photos.length-1;
+                    }
+
+                    clearInterval(this.time);
+                    this.photoChange();
+                    this.promitionalTextShowing();
+                }
+            });
+        }
     }
     promitionalTextShowing(){
         if(this.index !== 0){
