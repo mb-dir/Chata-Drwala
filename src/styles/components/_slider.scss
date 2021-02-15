@@ -44,18 +44,11 @@
             transition: opacity 2s;
         }
     }
-    &__textWrapper{
-        position: absolute;
-        width: 100%;
-        //75% of height to this wrapper does not cover the dots(if this wrapper covers the dots user is not able to click in dots)
-        height: 75%;
-        left: 0;
-        top: 0;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-    }
     &__promotionalText{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,-50%);
         font-size: 36px;
         color: #fff;
         text-shadow: 5px 5px 0px #000000;
